@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+
+        tbody > tr:nth-child(even) {
+            /*even = par // todas as linhas pares*/
+            background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+        }
+
+        .num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+            TABLE
+                CAPITON // Titulo da tabela
+                THEAD
+                    TR, TD, TH
+                TBODY
+                    TR, TD, TH
+                TFOOT
+                    TR, TD, TH
+    -->
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td  class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td  class="num">21.168.791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td  class="num">17.264.943</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td  class="num">14.850.513</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td  class="num">11.824.665</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td  class="num">11.229.915</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td  class="num">9.539.029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td  class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td  class="num">8.664.306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8.058.441</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td  class="num">9.539.029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td  class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td  class="num">8.664.306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8.058.441</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td  class="num">9.539.029</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td  class="num">9.233.656</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td  class="num">8.664.306</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8.058.441</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">
+                    Total de Habitantes
+                </th>
+                <td class="num"><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut vitae unde libero maxime eos sequi inventore quasi, nostrum officiis reiciendis obcaecati eveniet blanditiis molestiae atque quam accusantium quisquam exercitationem repudiandae!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto saepe amet, dolore a et nam magni aliquid quasi voluptates exercitationem doloribus repellendus iure delectus. Iure odio consequatur modi. Eligendi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde, iusto totam saepe labore dolorem laboriosam harum sed neque veniam quas expedita ad sunt esse officiis ratione ducimus iste nisi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod incidunt, temporibus quas porro similique repudiandae commodi odio odit voluptatum vel vero molestias nihil hic mollitia facere officia magnam accusantium!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error quod, et ducimus velit placeat maxime amet corporis quidem consequatur incidunt dignissimos voluptatem architecto repudiandae impedit ab repellendus optio aliquid.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut vitae unde libero maxime eos sequi inventore quasi, nostrum officiis reiciendis obcaecati eveniet blanditiis molestiae atque quam accusantium quisquam exercitationem repudiandae!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto saepe amet, dolore a et nam magni aliquid quasi voluptates exercitationem doloribus repellendus iure delectus. Iure odio consequatur modi. Eligendi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde, iusto totam saepe labore dolorem laboriosam harum sed neque veniam quas expedita ad sunt esse officiis ratione ducimus iste nisi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod incidunt, temporibus quas porro similique repudiandae commodi odio odit voluptatum vel vero molestias nihil hic mollitia facere officia magnam accusantium!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error quod, et ducimus velit placeat maxime amet corporis quidem consequatur incidunt dignissimos voluptatem architecto repudiandae impedit ab repellendus optio aliquid.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut vitae unde libero maxime eos sequi inventore quasi, nostrum officiis reiciendis obcaecati eveniet blanditiis molestiae atque quam accusantium quisquam exercitationem repudiandae!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto saepe amet, dolore a et nam magni aliquid quasi voluptates exercitationem doloribus repellendus iure delectus. Iure odio consequatur modi. Eligendi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde, iusto totam saepe labore dolorem laboriosam harum sed neque veniam quas expedita ad sunt esse officiis ratione ducimus iste nisi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod incidunt, temporibus quas porro similique repudiandae commodi odio odit voluptatum vel vero molestias nihil hic mollitia facere officia magnam accusantium!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error quod, et ducimus velit placeat maxime amet corporis quidem consequatur incidunt dignissimos voluptatem architecto repudiandae impedit ab repellendus optio aliquid.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut vitae unde libero maxime eos sequi inventore quasi, nostrum officiis reiciendis obcaecati eveniet blanditiis molestiae atque quam accusantium quisquam exercitationem repudiandae!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto saepe amet, dolore a et nam magni aliquid quasi voluptates exercitationem doloribus repellendus iure delectus. Iure odio consequatur modi. Eligendi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde, iusto totam saepe labore dolorem laboriosam harum sed neque veniam quas expedita ad sunt esse officiis ratione ducimus iste nisi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod incidunt, temporibus quas porro similique repudiandae commodi odio odit voluptatum vel vero molestias nihil hic mollitia facere officia magnam accusantium!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error quod, et ducimus velit placeat maxime amet corporis quidem consequatur incidunt dignissimos voluptatem architecto repudiandae impedit ab repellendus optio aliquid.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut vitae unde libero maxime eos sequi inventore quasi, nostrum officiis reiciendis obcaecati eveniet blanditiis molestiae atque quam accusantium quisquam exercitationem repudiandae!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam iusto saepe amet, dolore a et nam magni aliquid quasi voluptates exercitationem doloribus repellendus iure delectus. Iure odio consequatur modi. Eligendi?
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt unde, iusto totam saepe labore dolorem laboriosam harum sed neque veniam quas expedita ad sunt esse officiis ratione ducimus iste nisi!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quod incidunt, temporibus quas porro similique repudiandae commodi odio odit voluptatum vel vero molestias nihil hic mollitia facere officia magnam accusantium!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt error quod, et ducimus velit placeat maxime amet corporis quidem consequatur incidunt dignissimos voluptatem architecto repudiandae impedit ab repellendus optio aliquid.
+    </p>
+</body>
+</html>
